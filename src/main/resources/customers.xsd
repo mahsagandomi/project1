@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.example.com/customers"
+           xmlns="http://www.example.com/customers"
+           elementFormDefault="qualified">
+
+    <!-- Root element for Customers containing multiple Customer elements -->
+    <xs:element name="Customers">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Each Customer element represents a single customer -->
+                <xs:element name="Customer" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- customerId: unique integer ID for the customer -->
+                            <xs:element name="customerId" type="xs:int" />
+
+                            <!-- customerName: first name of the customer -->
+                            <xs:element name="customerName" type="xs:string" />
+
+                            <!-- customerSubName: surname of the customer -->
+                            <xs:element name="customerSubName" type="xs:string" />
+
+                            <!-- customerAddress: address of the customer -->
+                            <xs:element name="customerAddress" type="xs:string" />
+
+                            <!-- customerZipCode: postal code as an integer -->
+                            <xs:element name="customerZipCode" type="xs:int" />
+
+                            <xs:element name="customerNationalId" type="xs:string">
+                            </xs:element>
+                            <xs:element name="customerBirthDate" type="xs:date">
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

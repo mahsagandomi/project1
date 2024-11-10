@@ -1,0 +1,14 @@
+
+™	java:S135F"YReduce the total number of break and continue statements in this loop to use at most one.(ê¯Ò÷şÿÿÿÿJ$1b224636-3ad8-4694-91a4-daf6172624a2
+ƒ
+java:S2095="HUse try-with-resources or close this "FileReader" in a "finally" clause.(³õ™DJ$f417fc0f-487a-4b3c-9066-dbad7abd29a4
+Â
+java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æ Õ¾üÿÿÿÿJ$fbaff4e3-7aae-4ce2-8782-36c3b8587914
+u
+java:S3416 "4Update this logger to use "CustomerCsvThread.class".(èËúÿÿÿÿJ$50b31717-ef9a-4c83-ac46-973bd44256e0
+€
+java:S1874B"?Remove this use of "withFirstRecordAsHeader"; it is deprecated.(ÈñßÅşÿÿÿÿJ$32eb4d1b-5214-4590-8a5b-1b0668bd69ca
+{
+java:S6213F":Rename this variable to not match a restricted identifier.(ê¯Ò÷şÿÿÿÿJ$a924da3c-a4a0-40e1-bfc4-1fcd426198ba
+w	java:S125P"<This block of commented-out lines of code should be removed.(’÷úJ$0c0bde14-6aa2-4ea3-8d2a-f9f3119dfa33
+l	java:S106‚"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿJ$6c521a40-c73c-46b6-bbe3-3de98d08cbfa

@@ -1,0 +1,10 @@
+
+ˆ
+java:S2184P"FCast one of the operands of this multiplication operation to a "long".( J8²«Ã­±2J$ea2bbde2-2de9-4a1e-8121-321d9a91012c
+´
+java:S1130."lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(± Æıÿÿÿÿ8ê«Ã­±2J$239fc3a1-26ae-4232-bb34-a36caaa8cda6
+¶
+java:S1130."nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(± Æıÿÿÿÿ8ì«Ã­±2J$e2ebb00d-147a-4bdb-9850-2158bb20cc83
+ƒ	java:S1256"<This block of commented-out lines of code should be removed.(Ì²ÃÎüÿÿÿÿ8ü«Ã­±2J$5f10442f-a2d7-451d-bd3b-c29dfe8afa3b
+ƒ	java:S125F"<This block of commented-out lines of code should be removed.(Ë–Äéûÿÿÿÿ8…¬Ã­±2J$a7b6849b-8560-444a-a22a-7cc40fa179d7
+m	java:S106T"+Replace this use of System.out by a logger.(¾ÂÑ¢8ˆ¬Ã­±2J$dbcf89eb-f949-4433-b214-6d339d231908
