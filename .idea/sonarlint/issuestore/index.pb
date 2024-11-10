@@ -59,8 +59,6 @@ result.xml,b\2\b2c8d2aa015f399849b7cc0b5dfefd57bc971938
 Q
 !src/test/CustomertMethodTest.java,9\3\93b02d8fbf60bfe0cc11d41bad0434bb82289106
 P
- src/test/TestAccountMethods.java,e\7\e758aa0c2e82b1b7aec3d55dd64ce7e2631f60b1
-P
  src/test/AccountMethodsTest.java,f\9\f964234fd9314a01d19d8d6d854e0774512d7956
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
@@ -163,3 +161,7 @@ G.idea/sonarlint/issuestore/e/7/e758aa0c2e82b1b7aec3d55dd64ce7e2631f60b1,4\f\4f
 Q.idea/sonarlint/securityhotspotstore/f/9/f964234fd9314a01d19d8d6d854e0774512d7956,f\4\f4d1f2e8874756e720c09ad99b39ab1133ee146b
 w
 G.idea/sonarlint/issuestore/f/9/f964234fd9314a01d19d8d6d854e0774512d7956,c\0\c0761094b0f76353bb5ddd97f0769e56c99762fb
+<
+Project1.iml,f\b\fbf4eb3cad8c73194d1b1d5ef889840c320a579b
+P
+ src/test/CustomerMethodTest.java,4\c\4ce20b0c15c000c5c2580e231cf6343a159f4cd8

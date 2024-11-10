@@ -1,15 +1,15 @@
 
 
-java:S2184G"FCast one of the operands of this multiplication operation to a "long".(©ÿÍ‹ıÿÿÿÿ8µŸÃ­±2J$a2a88feb-2ac5-43b6-9142-19431dd2a97c
+java:S2184G"FCast one of the operands of this multiplication operation to a "long".(©ÿÍ‹ıÿÿÿÿ8µŸÃ­±2J$008a333f-8d25-44ff-b009-11ef6f067829
 }
-java:S1118":Add a private constructor to hide the implicit public one.(Çìß÷8Õ€Ìˆ°2J$7d1a9b89-ef66-4b8e-8848-9622818ab208
+java:S1118":Add a private constructor to hide the implicit public one.(Çìß÷8Õ€Ìˆ°2J$2d5a432c-a0d7-424d-8cf9-63bc40ce9651
 ¯
-java:S1130#"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(‹¿Ê8çŸÃ­±2J$0206a5b7-c4f1-4299-be62-fdb6896cc497
+java:S1130#"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(‹¿Ê8çŸÃ­±2J$6c23bc1c-66e5-4af3-9ab3-62da0ac427d2
 ±
-java:S1130#"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(‹¿Ê8çŸÃ­±2J$764d9858-2358-4612-a0b8-bd374e67ef01
-ƒ	java:S125+"<This block of commented-out lines of code should be removed.(Ì²ÃÎüÿÿÿÿ8ñŸÃ­±2J$7bff0d56-64eb-4c2d-8ecb-9626ca9e826d
-ƒ	java:S125;"<This block of commented-out lines of code should be removed.(Ë–Äéûÿÿÿÿ8õŸÃ­±2J$49af500a-4a19-405f-81b5-4738fcb3af4d
-m	java:S106?"+Replace this use of System.out by a logger.(ºş£Ş8øŸÃ­±2J$405abfe4-60a3-41a6-9cb2-308d25d7f32e
-m	java:S106I"+Replace this use of System.out by a logger.(¾ÂÑ¢8úŸÃ­±2J$a26bb27f-af05-45e2-a63a-07effb35937b
+java:S1130#"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(‹¿Ê8çŸÃ­±2J$d024b4d8-4efc-43c1-ae44-c2db92530be3
+ƒ	java:S125+"<This block of commented-out lines of code should be removed.(Ì²ÃÎüÿÿÿÿ8ñŸÃ­±2J$5a38ea39-3050-4f18-8a24-e55859c9cfee
+ƒ	java:S125;"<This block of commented-out lines of code should be removed.(Ë–Äéûÿÿÿÿ8õŸÃ­±2J$2ac19dff-91fe-458e-a440-cfa39e602812
+m	java:S106?"+Replace this use of System.out by a logger.(ºş£Ş8øŸÃ­±2J$0ebfe499-a91b-4b30-9d4e-ec0c34be6c14
+m	java:S106I"+Replace this use of System.out by a logger.(¾ÂÑ¢8úŸÃ­±2J$9ce71325-c1aa-46d0-95cd-22f2874fdf1b
 „
-java:S6353i"<Use concise character class syntax '\\d' instead of '[0-9]'.(ôùï¼şÿÿÿÿ8ò€Ìˆ°2J$207b18eb-fa6f-4035-97cc-ee4a6fc25751
+java:S6353i"<Use concise character class syntax '\\d' instead of '[0-9]'.(ôùï¼şÿÿÿÿ8ò€Ìˆ°2J$3e6d2cb1-dd09-406b-945d-9592e20926f3

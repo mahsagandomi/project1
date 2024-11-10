@@ -139,8 +139,7 @@ public class CustomersImpl implements ICustomerOperations {
         this.customerBirthDate = customerBirthDate;
     }
 
-    public CustomersImpl() {
-    }
+
 
     /**
      * Returns a string  of the customer, its customer's name and surname.
