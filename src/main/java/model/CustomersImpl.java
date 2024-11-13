@@ -139,14 +139,11 @@ public class CustomersImpl implements ICustomerOperations {
         this.customerBirthDate = customerBirthDate;
     }
 
-
-
     /**
      * Returns a string  of the customer, its customer's name and surname.
      *
      * @return The full name of the customer
      */
-
     @Override
     public String toString() {
         LOGGER.info("toString() called for customer: " + customerName + " " + customerSurName);

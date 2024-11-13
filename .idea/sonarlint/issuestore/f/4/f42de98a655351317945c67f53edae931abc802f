@@ -1,15 +1,16 @@
 
 
-java:S2184G"FCast one of the operands of this multiplication operation to a "long".(©ÿÍ‹ıÿÿÿÿ8µŸÃ­±2J$008a333f-8d25-44ff-b009-11ef6f067829
+java:S2184H"FCast one of the operands of this multiplication operation to a "long".(©ÿÍ‹ıÿÿÿÿ8µŸÃ­±2J$8b33c14d-897f-4906-af30-b601024dd94a
 }
-java:S1118":Add a private constructor to hide the implicit public one.(Çìß÷8Õ€Ìˆ°2J$2d5a432c-a0d7-424d-8cf9-63bc40ce9651
+java:S1118":Add a private constructor to hide the implicit public one.(Çìß÷8Õ€Ìˆ°2J$3800d37e-92a7-4979-866c-b4c718c6954e
 ¯
-java:S1130#"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(‹¿Ê8çŸÃ­±2J$6c23bc1c-66e5-4af3-9ab3-62da0ac427d2
+java:S1130$"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(‹¿Ê8çŸÃ­±2J$2585a975-38ee-4ae7-bf2d-3cc240908715
 ±
-java:S1130#"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(‹¿Ê8çŸÃ­±2J$d024b4d8-4efc-43c1-ae44-c2db92530be3
-ƒ	java:S125+"<This block of commented-out lines of code should be removed.(Ì²ÃÎüÿÿÿÿ8ñŸÃ­±2J$5a38ea39-3050-4f18-8a24-e55859c9cfee
-ƒ	java:S125;"<This block of commented-out lines of code should be removed.(Ë–Äéûÿÿÿÿ8õŸÃ­±2J$2ac19dff-91fe-458e-a440-cfa39e602812
-m	java:S106?"+Replace this use of System.out by a logger.(ºş£Ş8øŸÃ­±2J$0ebfe499-a91b-4b30-9d4e-ec0c34be6c14
-m	java:S106I"+Replace this use of System.out by a logger.(¾ÂÑ¢8úŸÃ­±2J$9ce71325-c1aa-46d0-95cd-22f2874fdf1b
-„
-java:S6353i"<Use concise character class syntax '\\d' instead of '[0-9]'.(ôùï¼şÿÿÿÿ8ò€Ìˆ°2J$3e6d2cb1-dd09-406b-945d-9592e20926f3
+java:S1130$"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(‹¿Ê8çŸÃ­±2J$1028c89a-1ac4-4225-b940-e04f40cbaf27
+ƒ	java:S125,"<This block of commented-out lines of code should be removed.(Ì²ÃÎüÿÿÿÿ8ñŸÃ­±2J$476fc3fe-cef3-4665-a9c3-40789ad660c0
+ƒ	java:S125<"<This block of commented-out lines of code should be removed.(Ë–Äéûÿÿÿÿ8õŸÃ­±2J$b1dbbf1a-039d-4a4e-8099-fc154c7f2cb2
+m	java:S106@"+Replace this use of System.out by a logger.(ºş£Ş8øŸÃ­±2J$a5f43327-a15f-4736-8475-3bf6c48c0996
+m	java:S106J"+Replace this use of System.out by a logger.(¾ÂÑ¢8úŸÃ­±2J$70904280-8147-4d7b-9495-651c680e13ef
+]	java:S125k"<This block of commented-out lines of code should be removed.(ß—¼™üÿÿÿÿ8©™øú±2
+
+java:S6353n"<Use concise character class syntax '\\d' instead of '[0-9]'.(›‚±8µ™ØÛ±2J$f2130fda-edbf-431a-b9e0-fd40b6ae9809

@@ -5,8 +5,6 @@ S
 #src/main/java/csvfiles/Accounts.csv,9\d\9d8229e7bba06136a933326dc39202dbc13de894
 T
 $src/main/java/csvfiles/Customers.csv,b\c\bc1f33f832746bc4ddcdf7166730bbe2a1bbf042
-V
-&src/test/java/org/example/AppTest.java,4\3\438c56474209176629917f1aaaac4e1cf31f765e
 W
 'src/main/java/repository/SingleTon.java,8\8\886f9fef33175d0a24bcceee04c43210b888a5ac
 \
@@ -17,8 +15,6 @@ e
 5src/main/java/Exceptions/AccountBalanceException.java,b\a\ba86bda1862db0f27388e542938d65bb2846bd7e
 H
 src/main/java/Main2.java,5\4\540877b3ddd6084322bb95a86cce609ac7e79054
-b
-2src/main/java/repository/sqlsquery/SqlQueries.java,b\d\bd2d0125fa3f36838ccc3c811307c07c14139f70
 d
 4src/main/java/Exceptions/AccountNumberException.java,a\2\a206d0f741bd37439860da4961857e59cd015155
 h
@@ -56,14 +52,10 @@ G
 result.xml,b\2\b2c8d2aa015f399849b7cc0b5dfefd57bc971938
 \
 ,src/main/java/utility/CustomerCsvThread.java,8\d\8d223c5e5cbe6f8ffa2441b453f98227623c049b
-Q
-!src/test/CustomertMethodTest.java,9\3\93b02d8fbf60bfe0cc11d41bad0434bb82289106
 P
  src/test/AccountMethodsTest.java,f\9\f964234fd9314a01d19d8d6d854e0774512d7956
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
-Å
-Q.idea/sonarlint/securityhotspotstore/4/3/438c56474209176629917f1aaaac4e1cf31f765e,3\2\32963aeda7d79c65f84f85e7873871133b9300f5
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -81,10 +73,6 @@ Q.idea/sonarlint/securityhotspotstore/b/a/ba86bda1862db0f27388e542938d65bb2846bd
 Q.idea/sonarlint/securityhotspotstore/b/c/bc1f33f832746bc4ddcdf7166730bbe2a1bbf042,e\0\e058b0e562b705ea26f1b853d946e5de7bbb5a9e
 Å
 Q.idea/sonarlint/securityhotspotstore/c/b/cb3788adfa49772cbe2f5c63de934b186472a080,6\b\6b69ca58396b9642b4f4d6b1d8b90cb6ce2fc9f2
-Å
-Q.idea/sonarlint/securityhotspotstore/9/3/93b02d8fbf60bfe0cc11d41bad0434bb82289106,c\e\ce413fb870bef0ba66be7a70aed1488c8e08fdeb
-Å
-Q.idea/sonarlint/securityhotspotstore/b/d/bd2d0125fa3f36838ccc3c811307c07c14139f70,c\1\c196a654a23275cfc749fddd6b4cc5d3d6f1410b
 Å
 Q.idea/sonarlint/securityhotspotstore/5/4/540877b3ddd6084322bb95a86cce609ac7e79054,3\5\35ac4696171b95e47f56997f0c75e4c00d4b9f12
 Å
@@ -107,8 +95,6 @@ G.idea/sonarlint/issuestore/a/c/ac511b0ee5c600e1329402f047c65dcfcd6c6a6c,9\5\95
 Q.idea/sonarlint/securityhotspotstore/1/d/1d122e0803dbbdf2f57e37aa9381714a3dbe712b,a\8\a8aee467c438f92c3fac8a940fc80b122e86c2f0
 Å
 Q.idea/sonarlint/securityhotspotstore/a/c/ac511b0ee5c600e1329402f047c65dcfcd6c6a6c,9\a\9a0d04235db82ab4086595a6a14fcab160d63cf3
-w
-G.idea/sonarlint/issuestore/4/3/438c56474209176629917f1aaaac4e1cf31f765e,5\b\5bd599b9d1213199dc9eefd61a03c8c1876a6250
 w
 G.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,8\6\863e0292fd7e9b3e74dafd6cc01f73ba76346482
 Å
@@ -154,10 +140,6 @@ Q.idea/sonarlint/securityhotspotstore/e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 Å
-Q.idea/sonarlint/securityhotspotstore/e/7/e758aa0c2e82b1b7aec3d55dd64ce7e2631f60b1,7\8\78e7a737cae67fdaa715447236d7219cc79a7b06
-w
-G.idea/sonarlint/issuestore/e/7/e758aa0c2e82b1b7aec3d55dd64ce7e2631f60b1,4\f\4fc27a17f2dc104d4bd8e6f076087fe3479b5eaf
-Å
 Q.idea/sonarlint/securityhotspotstore/f/9/f964234fd9314a01d19d8d6d854e0774512d7956,f\4\f4d1f2e8874756e720c09ad99b39ab1133ee146b
 w
 G.idea/sonarlint/issuestore/f/9/f964234fd9314a01d19d8d6d854e0774512d7956,c\0\c0761094b0f76353bb5ddd97f0769e56c99762fb
@@ -165,3 +147,5 @@ G.idea/sonarlint/issuestore/f/9/f964234fd9314a01d19d8d6d854e0774512d7956,c\0\c0
 Project1.iml,f\b\fbf4eb3cad8c73194d1b1d5ef889840c320a579b
 P
  src/test/CustomerMethodTest.java,4\c\4ce20b0c15c000c5c2580e231cf6343a159f4cd8
+W
+'src/main/java/utility/ConfigLoader.java,7\5\75e1e9735bdf4ed7260d2c7e013d3bc4d2894a08

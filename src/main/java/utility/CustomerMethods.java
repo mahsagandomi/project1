@@ -1,6 +1,9 @@
 package utility;
 
+import Threads.CustomerCsvThread;
+import Threads.MonitoringThread;
 import org.apache.log4j.Logger;
+import org.jasypt.util.text.BasicTextEncryptor;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 
@@ -27,49 +30,46 @@ public class CustomerMethods {
      * This method processes each record in the CSV file, validates the data,
      * and writes valid records to the database using the DatabaseMethods class.
      *
-     * @throws IOException      If an error occurs while reading the file
-     * @throws SQLException     If an error occurs during database operations
-     * @throws SchedulerException If an error occurs during scheduling jobs
+     * @throws IOException          If an error occurs while reading the file
+     * @throws SQLException         If an error occurs during database operations
+     * @throws SchedulerException   If an error occurs during scheduling jobs
      * @throws InterruptedException If the thread is interrupted
      */
     public static void readCustomerFile() throws IOException, SQLException, SchedulerException, InterruptedException {
+        // Create a SchedulerFactory to manage the scheduling of jobs
         SchedulerFactory schedulerFactory = new StdSchedulerFactory();
+        // Obtain a Scheduler instance from the factory
         Scheduler scheduler = schedulerFactory.getScheduler();
-
-        // تعداد Jobها و رکوردها در هر Job
-        int numJobs = 2; // تعداد Jobها
-
-        // ایجاد و اضافه کردن Jobها و Triggerها به Scheduler با استفاده از حلقه
-        //   int startRecord =1;
-        // int endRecord = 5;
-        int recordsPerJob = 5; // تعداد رکوردها برای هر Job
+        // Define the number of jobs to schedule
+        int numJobs = 2;
+        // Define the number of records each job will process
+        int recordsPerJob = 5;
+        // Loop to create and schedule jobs for processing customer data
         for (int i = 0; i < numJobs; i++) {
+            // Calculate the range of records for the current job
             int startRecord = i * recordsPerJob + 1;
             int endRecord = startRecord + recordsPerJob - 1;
-            JobDetail jobDetail = createJob("CsvJob" + (i + 1), "group1", startRecord, endRecord);
-
+            // Create a JobDetail object for the current job
+            JobDetail jobDetail = createJob("CustomerCsvFile" + (i + 1), startRecord, endRecord);
+            // Create a Trigger to start the job immediately with no repetition
             Trigger trigger = TriggerBuilder.newTrigger()
                     .withIdentity("myTrigger" + (i + 1), "group1")
                     .startNow()
                     .withSchedule(SimpleScheduleBuilder.simpleSchedule()
                             .withRepeatCount(0))
                     .build();
-
+            // Schedule the job with the scheduler using the JobDetail and Trigger
             scheduler.scheduleJob(jobDetail, trigger);
-            //startRecord=endRecord+1;
-            //endRecord=startRecord+5;
-            Trigger.TriggerState state = scheduler.getTriggerState(trigger.getKey());
-            LOGGER.info("Trigger " + trigger.getKey() + " state: " + state);
-            System.out.println(state);
-
+            // Add a custom job listener to monitor the job's execution
+            scheduler.getListenerManager().addJobListener(new MonitoringThread());
         }
 
         // start Scheduler
         scheduler.start();
         LOGGER.info("Finished scheduling jobs for reading and saving customer data from file");
 
-        Thread.sleep(60 * 1000); // تنظیم برای متوقف کردن Scheduler بعد از ۶۰ ثانیه
-        scheduler.shutdown(true); // توقف کامل Scheduler
+        Thread.sleep(60 * 1000);
+        scheduler.shutdown(true);
         System.out.println("Scheduler has been shut down.");
 
         LOGGER.info("Finished reading and saving customer data from file");
@@ -78,20 +78,23 @@ public class CustomerMethods {
     /**
      * Creates a JobDetail with the specified parameters.
      *
-     * @param jobName    The name of the job
-     * @param groupName  The group name of the job
+     * @param jobName     The name of the job
      * @param startRecord The start record number for the job
-     * @param endRecord  The end record number for the job
+     * @param endRecord   The end record number for the job
      * @return JobDetail instance
      */
-    private static JobDetail createJob(String jobName, String groupName, int startRecord, int endRecord) {
+    private static JobDetail createJob(String jobName, int startRecord, int endRecord) {
+        // Create a JobDataMap to store additional data to be passed to the job
         JobDataMap dataMap = new JobDataMap();
         dataMap.put("startRecord", startRecord);
         dataMap.put("endRecord", endRecord);
-
+        // Build and return a JobDetail object
         return JobBuilder.newJob(CustomerCsvThread.class)
-                .withIdentity(jobName, groupName)
+                // Set the job name and group name
+                .withIdentity(jobName, "group1")
+                // Attach the data map containing job-specific data
                 .usingJobData(dataMap)
+                //build
                 .build();
     }
 
@@ -102,7 +105,11 @@ public class CustomerMethods {
      * @return true if the national ID is valid, false otherwise
      */
     public static boolean validateCustomerNationalID(String customerNationalId) {
-        return customerNationalId.matches("[0-9]{10}");
+        BasicTextEncryptor basicTextEncryptor = new BasicTextEncryptor();
+//        basicTextEncryptor.setPassword(basicTextEncryptor.decrypt(ConfigLoader.getEncryptionPassword()));
+        basicTextEncryptor.setPassword(ConfigLoader.getEncryptionPassword());
+        String customerNationalIdEncrypt = basicTextEncryptor.decrypt(customerNationalId);
+        return customerNationalIdEncrypt.matches("[0-9]{10}");
     }
 
     /**

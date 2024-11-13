@@ -60,8 +60,9 @@ public class CustomerJsonReport {
             int customerZipcode = resultSet.getInt("customerZipcode");
             String customerNationalId = resultSet.getString("customerNationalId");
             LocalDate customerBirthDate = resultSet.getDate("customerBirthDate").toLocalDate();
-            // Create a new Customer object and add it to the list
+            // Add a new customer object to the list using the provided customer details
             list.add(new CustomersImpl(customerId, customerName, customerSubName, customerAddress, customerZipcode, customerNationalId, customerBirthDate));
+            // Log an informational message indicating that the customer has been successfully added to the list
             LOGGER.info("Added customer" + customerId);
         }
         // Write the list of Customers to JSON file
@@ -69,6 +70,4 @@ public class CustomerJsonReport {
         LOGGER.info("Successfully wrote customer data to JSON file.");
         System.out.println("Json file created successfully");
     }
-
-
 }

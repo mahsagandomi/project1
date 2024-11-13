@@ -2,7 +2,7 @@ package repository;
 
 import model.AccountType;
 import org.apache.log4j.Logger;
-import repository.sqlsquery.SqlQueries;
+import repository.queries.SqlQueries;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,7 +26,12 @@ public class DatabaseMethods {
     private static final Logger LOGGER = Logger.getLogger(DatabaseMethods.class);
 
     // Static variable to hold the database connection
-    static Connection con;
+    public static Connection con;
+    // Allow setting connection externally (for testing purposes)
+    public static void setConnection(Connection connection) {
+        con = connection;
+    }
+
     // Private constructor to don't allow to create object from this class
     private DatabaseMethods() {
     }
@@ -48,7 +53,10 @@ public class DatabaseMethods {
                                       int customerZipCode, String customerNationalId,
                                       LocalDate customerBirthDate) throws SQLException {
         // Get the database connection
-        con = SingleTon.getcon();
+        if (con == null) {
+            con = SingleTon.getCon();
+        }
+     //   con = SingleTon.getcon();
         // **گام 1.1**: خواندن رکوردهای فایل customers.csv
         PreparedStatement preparedStatement = con.prepareStatement(SqlQueries.WRITE_CU_QUERY);
         // Set customer ID
@@ -103,7 +111,10 @@ public class DatabaseMethods {
                                      int accountLimit, LocalDate accountOpenDate,
                                      int accountBalance) throws SQLException {
         // Get the database connection
-        con = SingleTon.getcon();
+        if (con == null) {
+            con = SingleTon.getCon();
+        }
+       // con = SingleTon.getcon();
         // Prepare the SQL statement for inserting a new account
         PreparedStatement preparedStatement = con.prepareStatement(SqlQueries.WRITE_AC_QUERY);
 
@@ -118,6 +129,7 @@ public class DatabaseMethods {
         // Set account open date
         preparedStatement.setDate(5, java.sql.Date.valueOf(accountOpenDate));
         // Set account balance
+
         preparedStatement.setInt(6, accountBalance);
         // Execute the SQL update statement
         preparedStatement.executeUpdate();
@@ -132,7 +144,10 @@ public class DatabaseMethods {
      * @throws SQLException If there is an error while executing the SQL statement.
      */
     public static ResultSet getResultsetReport() throws SQLException {
-        con = SingleTon.getcon();
+        if (con == null) {
+            con = SingleTon.getCon();
+        }
+       // con = SingleTon.getcon();
         // Prepare the SQL statement for retrieving account report
         PreparedStatement preparedStatement = con.prepareStatement(SqlQueries.AC_REPORT_SQL_QUERY);
         LOGGER.info("Account result set report successfully.");

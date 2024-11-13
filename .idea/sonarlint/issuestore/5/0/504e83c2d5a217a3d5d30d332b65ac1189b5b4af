@@ -1,10 +1,13 @@
 
 ˆ
-java:S2184P"FCast one of the operands of this multiplication operation to a "long".( J8²«Ã­±2J$ea2bbde2-2de9-4a1e-8121-321d9a91012c
+java:S2184Q"FCast one of the operands of this multiplication operation to a "long".( J8€í‰Ü±2J$a8cd8d6a-a44a-4233-9da5-e33fb46bb444
 ´
-java:S1130."lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(± Æıÿÿÿÿ8ê«Ã­±2J$239fc3a1-26ae-4232-bb34-a36caaa8cda6
+java:S1130/"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(± Æıÿÿÿÿ8›í‰Ü±2J$3cb36de2-6fb7-4690-b909-a6f1f31499cc
 ¶
-java:S1130."nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(± Æıÿÿÿÿ8ì«Ã­±2J$e2ebb00d-147a-4bdb-9850-2158bb20cc83
-ƒ	java:S1256"<This block of commented-out lines of code should be removed.(Ì²ÃÎüÿÿÿÿ8ü«Ã­±2J$5f10442f-a2d7-451d-bd3b-c29dfe8afa3b
-ƒ	java:S125F"<This block of commented-out lines of code should be removed.(Ë–Äéûÿÿÿÿ8…¬Ã­±2J$a7b6849b-8560-444a-a22a-7cc40fa179d7
-m	java:S106T"+Replace this use of System.out by a logger.(¾ÂÑ¢8ˆ¬Ã­±2J$dbcf89eb-f949-4433-b214-6d339d231908
+java:S1130/"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(± Æıÿÿÿÿ8›í‰Ü±2J$fffae4f2-af33-4328-b823-c38512145192
+ƒ	java:S1257"<This block of commented-out lines of code should be removed.(Ì²ÃÎüÿÿÿÿ8£í‰Ü±2J$e23f0135-6ce3-414b-b44f-3aa075ba73ee
+ƒ	java:S125G"<This block of commented-out lines of code should be removed.(Ë–Äéûÿÿÿÿ8¨í‰Ü±2J$84b5a53e-40db-4db8-bd8f-16358401fc0d
+m	java:S106U"+Replace this use of System.out by a logger.(¾ÂÑ¢8«í‰Ü±2J$f00121cc-ade9-4bc1-86d3-6522b08bad95
+^	java:S125"<This block of commented-out lines of code should be removed.(Ğ‰Äøÿÿÿÿ8ˆ‰œú±2
+a
+java:S1128"DRemove this unused import 'org.jasypt.util.text.BasicTextEncryptor'.(“¸³×8‰‰œú±2

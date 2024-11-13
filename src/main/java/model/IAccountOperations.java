@@ -44,9 +44,4 @@ public interface IAccountOperations {
      * @return The account balance as an integer.
      */
     int getAccountBalance();
-
-
 }
-
-
-

@@ -1,11 +1,11 @@
 recordNumber,customerId,customerName,customerSubName,customerAddress,customerZipCode,customerNationalId,customerBirthDate
 1,1001,Mahsa,Gandomi,123 Main St,12345,9876543211,1997-04-12
 2,1002,Sahar,Alian,456 Elm St,54321,1234567890,1999-11-23
-3,1003,Mohsen,Azizi,789 Oak St,11223,9871230456,2000-07-09
+3,1003,Mohsen,Azimi,789 Oak St,11223,9871230456,2000-07-09
 4,1004,Reza,Alavi,321 Maple St,33445,3218987654,1995-02-15
 5,1005,Hadis,Hassani,654 Pine St,55667,1509753486,1997-09-19
 6,1006,mahdi,Amiri,987 Birch St,77889,8529637410,1993-05-30
 7,1007,sina,Hadian,159 Cedar St,99001,7412589603,1998-01-05
 8,1008,Sara,Ahmadi,753 Fir St,66778,9638520741,1999-10-20
-9,1009,Elina,Ebrahimi,852 Spruce St,88443,3507951486,2000-12-28
+9,1009,Ali,Ebrahimi,852 Spruce St,88443,3507951486,2000-12-28
 10,1010,Zahra,salimi,951 Willow St,22334,0456789123,1989-06-11

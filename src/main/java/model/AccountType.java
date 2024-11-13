@@ -33,7 +33,6 @@ public enum AccountType {
      *
      * @return The unique identifier as a string
      */
-
     @Override
     public String toString() {
         return accountTypeNumber;

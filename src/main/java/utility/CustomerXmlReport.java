@@ -74,7 +74,6 @@ public class CustomerXmlReport {
             int customerZipCode = resultSet.getInt("customerZipCode");
             String customerNationalId = resultSet.getString("customerNationalId");
             LocalDate customerBirthDate = resultSet.getDate("customerBirthDate").toLocalDate();
-
             // Create a Customers object using the extracted data
             CustomersImpl customer = new CustomersImpl(customerId, customerName, customerSubName, customerAddress, customerZipCode, customerNationalId, customerBirthDate);
 

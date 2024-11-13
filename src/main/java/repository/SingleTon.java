@@ -32,7 +32,7 @@ public class SingleTon {
      *
      * @return Connection  the database connection
      */
-    public static Connection getcon() {
+    public static Connection getCon() {
         BasicTextEncryptor basicTextEncryptor = new BasicTextEncryptor();
         // Set the password used for decryption of the database password
         basicTextEncryptor.setPassword("MysqlPass");

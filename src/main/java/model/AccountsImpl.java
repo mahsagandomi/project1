@@ -11,7 +11,8 @@ import java.util.function.Predicate;
 /**
  * Accounts: Represents a bank account with details like account number, type, customer ID,
  * balance, and open date.
- *This class implements IAccountOperations
+ * This class implements IAccountOperations
+ *
  * @author mahsa
  * @version 1.0
  * @since 1.0
@@ -29,7 +30,6 @@ public class AccountsImpl implements IAccountOperations {
     // The maximum allowable balance for the account
     private static final int ACCOUNT_LIMIT = 10000;
     // The date the account was opened
-
     private LocalDate accountOpenDate;
     // The balance of the account
     private int accountBalance;
