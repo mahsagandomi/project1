@@ -7,8 +7,6 @@ T
 $src/main/java/csvfiles/Customers.csv,b\c\bc1f33f832746bc4ddcdf7166730bbe2a1bbf042
 W
 'src/main/java/repository/SingleTon.java,8\8\886f9fef33175d0a24bcceee04c43210b888a5ac
-\
-,src/main/java/repository/EncryptSqlPass.java,c\b\cb3788adfa49772cbe2f5c63de934b186472a080
 ;
 result.json,8\f\8f043c6c51399f6663a032c950b9ebba5c2faf52
 e
@@ -45,13 +43,9 @@ H
 src/main/java/Main3.java,0\b\0bd3a3e091406aa40debc52abe452cb078e84cf9
 G
 src/main/java/Main.java,e\4\e44a8606ce010ad9b89aafdfcee2ab49afbf6d10
-[
-+src/main/java/utility/AccountCsvThread.java,d\e\de7ffc82e6cf3fd7b6e7b8ee279a5b4aa6c7792d
 :
 
 result.xml,b\2\b2c8d2aa015f399849b7cc0b5dfefd57bc971938
-\
-,src/main/java/utility/CustomerCsvThread.java,8\d\8d223c5e5cbe6f8ffa2441b453f98227623c049b
 P
  src/test/AccountMethodsTest.java,f\9\f964234fd9314a01d19d8d6d854e0774512d7956
 \
@@ -149,3 +143,5 @@ P
  src/test/CustomerMethodTest.java,4\c\4ce20b0c15c000c5c2580e231cf6343a159f4cd8
 W
 'src/main/java/utility/ConfigLoader.java,7\5\75e1e9735bdf4ed7260d2c7e013d3bc4d2894a08
+Q
+!src/test/DatabaseMethodsTest.java,9\2\92c5c48b6baee0674abc0b3b4d48dc69f8d71128
